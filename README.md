@@ -29,6 +29,14 @@ API reference and the guide documentations.
   * [Ubuntu 源码安装](https://mynt-eye-d-sdk.rtfd.io/zh_CN/latest/sdk/install_ubuntu_src.html)
   * [Windows 源码安装](https://mynt-eye-d-sdk.rtfd.io/zh_CN/latest/sdk/install_win_src.html)
     * [Windows EXE 安装](https://mynt-eye-d-sdk.rtfd.io/zh_CN/latest/sdk/install_win_exe.html)
+    
+### Ubuntu 14.04 with kernel 4.19 installation
+
+```
+wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
+sudo dpkg --force-all -i libstdc++6
+printf '\x02' | dd of=libeSPDI.so.3.0.24.05 bs=1 seek=145474 count=1 conv=notrunc
+```
 
 ## Mirrors
 
